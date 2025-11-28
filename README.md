@@ -24,30 +24,17 @@ The entire application runs on **HTML, CSS, and vanilla JavaScript** with no bui
 
 assignment-3/
 ├── README.md
-
 ├── index.html
-
 ├── css/
-
 │   └── styles.css
-
 ├── js/
-
 │   └── script.js
-
 ├── assets/
-
 │   └── images/
-
 ├── docs/
-
 │   ├── ai-usage-report.md
-
 │   └── technical-documentation.md
-
 └── .gitignore
-
-
 
 
 
