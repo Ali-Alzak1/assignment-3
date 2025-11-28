@@ -26,14 +26,14 @@ assignment-3/
 ├── README.md
 ├── index.html
 ├── css/
-│   └── styles.css
+│ └── styles.css
 ├── js/
-│   └── script.js
+│ └── script.js
 ├── assets/
-│   └── images/
+│ └── images/
 ├── docs/
-│   ├── ai-usage-report.md
-│   └── technical-documentation.md
+│ ├── ai-usage-report.md
+│ └── technical-documentation.md
 └── .gitignore
 
 
