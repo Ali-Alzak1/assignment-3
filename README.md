@@ -1,233 +1,206 @@
-📁 Assignment 3 – Advanced Functionality
-Personal Portfolio Web Application
+# 📁 Assignment 3 – Advanced Functionality  
+### Personal Portfolio Web Application
 
-This repository contains my implementation for Assignment 3 – Advanced Functionality, where I continued developing my personal portfolio web application.
-The focus for this stage of the project was to implement API integrations, complex logic, state management, performance improvements, and a documented use of AI tools.
+This repository contains my implementation for **Assignment 3 – Advanced Functionality**, where I continued developing my personal portfolio web application.  
+The focus for this stage of the project was to implement **API integrations**, **complex logic**, **state management**, **performance improvements**, and a **documented use of AI tools**.
 
-🚀 Overview
+---
+
+# 🚀 Overview
 
 This version of my portfolio expands on the structure built in Assignments 1 and 2 and introduces more advanced features including:
 
-Live API-powered components (GitHub, weather, quotes)
+- Live API-powered components (GitHub, weather, quotes)
+- Complex client-side logic (filtering, sorting, form validation)
+- State persistence using localStorage
+- Optimized performance and accessibility
+- Detailed documentation of AI-assisted development
 
-Complex client-side logic (filtering, sorting, form validation)
+The entire application runs on **HTML, CSS, and vanilla JavaScript** with no build tools, making it lightweight, fast, and easy to run locally.
 
-State persistence using localStorage
+---
 
-Optimized performance and accessibility
+# 📂 Project Structure
 
-Detailed documentation of AI-assisted development
-
-The entire application runs on HTML, CSS, and vanilla JavaScript with zero build tools, making it lightweight, fast, and easy to run locally.
-
-📂 Project Structure
 assignment-3/
 ├── README.md
 ├── index.html
 ├── css/
-│   └── styles.css
+│ └── styles.css
 ├── js/
-│   └── script.js
+│ └── script.js
 ├── assets/
-│   └── images/
+│ └── images/
 ├── docs/
-│   ├── ai-usage-report.md
-│   └── technical-documentation.md
+│ ├── ai-usage-report.md
+│ └── technical-documentation.md
 └── .gitignore
 
-🧠 Key Features
-🔗 1. External API Integrations
 
+---
+
+# 🧠 Key Features
+
+## 🔗 1. External API Integrations
 Implemented fully-functional fetch requests with graceful error handling:
 
-GitHub API
+### **GitHub API**
+- Displays my latest repositories  
+- Shows language, stars, forks, and last updated time  
+- Includes skeleton loaders and offline fallback messaging  
 
-Displays my latest repositories
+### **Weather API (wttr.in)**
+- Fetches live weather data (temperature, humidity, conditions)  
+- Converts weather codes to emoji for friendly UI  
 
-Shows language, stars, forks, last updated time
+### **Quotes API (Quotable → ZenQuotes → Local fallback)**
+- Motivational tech/programming quotes  
+- Multi-layer fallback ensures this widget never fails  
 
-Includes skeleton loaders and offline fallback messaging
+---
 
-Weather API (wttr.in)
+## 🧩 2. Complex Logic
 
-Fetches live weather data (temperature, humidity, conditions)
+### **Project Explorer**
+- Debounced search  
+- Tag-based filtering  
+- Difficulty filtering  
+- Sorting options  
+- Empty-state handling  
+- Persistent filters  
 
-Converts weather codes to emoji for friendly UI
+### **Contact Form**
+- Live validation  
+- Email formatting checks  
+- Character counter  
+- Prevents invalid submissions  
+- Success toast notifications  
 
-Quotes API (Quotable → ZenQuotes → Local fallback)
+### **Skills & Sections**
+- Animated skill bars  
+- Category filtering  
+- Collapsible website sections with saved state  
 
-Motivational tech/programming quotes
+---
 
-Multiple fallback layers ensure this widget never fails
+## 💾 3. State Management
 
-All API responses are sanitized for safety before rendering.
+Using `localStorage`, the site remembers:
 
-🧩 2. Complex Logic
+- Theme (light / dark / system)
+- Visitor’s name (personalized greeting)
+- Section visibility
+- Project filters
+- Skills category selection
 
-Built several multi-step interactions:
+State is restored on refresh automatically.
 
-Project Explorer
+---
 
-Search with debounce
+# ⚡ 4. Performance Enhancements
 
-Tag-based filtering
+- Lazy-loaded images  
+- Single optimized CSS + JS payload  
+- Debounced event handlers  
+- No external frameworks → fast load  
+- Prefers-reduced-motion support  
+- Removed unused assets and code  
 
-Difficulty filter
+---
 
-Sorting (alphabetical/date)
+# ♿ Accessibility & UX
 
-Empty-state handling
+- Semantic HTML structure  
+- ARIA labels and aria-expanded sync  
+- Keyboard navigation + skip link  
+- Toast notifications with aria-live regions  
+- Sticky navigation + scroll progress indicator  
+- Fully responsive layout across devices  
 
-Persistent preferences
+---
 
-Contact Form
+# 🛠 Running the Project Locally
 
-Email + message validation
+1. Clone the repository:
 
-Live character counter
-
-Prevents invalid submissions
-
-Success toast notifications
-
-Skills and Sections
-
-Animated skill bars
-
-Category filtering
-
-Collapsible website sections with saved state
-
-💾 3. State Management
-
-Using localStorage, the site remembers:
-
-Theme (light/dark/system)
-
-Visitor name (personalized greeting)
-
-Section visibility
-
-Project filter options
-
-Skills category selection
-
-Everything restores instantly on page reload.
-
-⚡ 4. Performance Enhancements
-
-Lazy-loaded images
-
-Single optimized CSS + JS payload
-
-Debounced input handlers
-
-No external frameworks → fast loading
-
-Prefers-reduced-motion support
-
-Lighthouse-driven cleanup of unused code and assets
-
-♿ 5. Accessibility & UX
-
-Proper semantic HTML
-
-ARIA labels / aria-expanded state syncing
-
-Keyboard navigation + skip link
-
-Toast messages in aria-live regions
-
-Sticky nav, back-to-top button, scroll indicator
-
-Mobile-responsive layout
-
-🛠 How to Run the Project Locally
-
-Clone the repository:
-
-git clone https://github.com/<your-username>/assignment-3.git
+git clone https://github.com/Ali-Alzak1/assignment-3.git
 
 
-Open the project folder:
+2. Navigate into the folder:
 
 cd assignment-3
 
 
-Open index.html in any modern web browser.
+3. Open `index.html` in your browser.  
+_No setup or installation needed._
 
-No installation or build steps required—it's a pure static site.
+---
 
-🧪 Testing Summary
+# 🧪 Testing Summary
 
-The site has been manually tested for:
+Manually tested for:
 
-API success + failure states
+- API success/failure handling  
+- All project filter combinations  
+- Contact form validation  
+- Section toggle persistence  
+- Theme switching  
+- Mobile and desktop breakpoints  
+- Keyboard navigation  
+- Multiple browser compatibility  
 
-All filter/sort combinations
+---
 
-Form validation and toasts
+# 🤖 AI Usage Summary
 
-Section toggle memory
+A detailed log is available in:
 
-Theme switching
+docs/ai-usage-report.md
 
-Mobile vs desktop breakpoints
 
-Keyboard navigation
+### High-Level Summary
+AI Tools Used:
+- **Lovable** – design exploration  
+- **ChatGPT** – planning, research, troubleshooting  
+- **GitHub Copilot** – boilerplate suggestions in code editor  
+- **Cursor** – refactoring, debugging, documentation shaping  
 
-Browser compatibility (Chrome, Edge, Firefox, Safari)
+### Responsible Use
+- All AI suggestions were reviewed, edited, rewritten, or adapted manually.  
+- No AI output was used blindly.  
+- Full transparency is provided in the AI usage report.  
 
-🤖 AI Usage Summary
+---
 
-A detailed log is available in docs/ai-usage-report.md, but here is a high-level summary:
+# 📄 Additional Documentation
 
-AI Tools Used
+| File | Description |
+|------|-------------|
+| `docs/technical-documentation.md` | Architecture, APIs, logic, testing, and performance details |
+| `docs/ai-usage-report.md` | Required documentation of all AI assistance |
 
-Lovable (UI design exploration)
+---
 
-ChatGPT (planning, research)
 
-GitHub Copilot (boilerplate suggestions)
+---
 
-Cursor (debugging, refactoring, documentation review)
+# 📜 Academic Integrity
 
-My Workflow
+All work in this assignment is my own.  
+AI tools were used responsibly for brainstorming, debugging, and documentation—not for replacing understanding.  
+All AI usage is fully documented as required.
 
-AI helped with brainstorming, structure, documentation, and small code suggestions.
+---
 
-I manually reviewed, edited, tested, and adapted every piece of code.
+# ✅ Final Notes
 
-No unedited AI-generated code was copied directly.
+This version of the portfolio includes advanced interactivity, APIs, state management, and performance improvements—meeting all Assignment 3 requirements.  
+It also forms a strong foundation for future portfolio iterations.
 
-All usage is fully documented per assignment requirements.
+If you want:
+- a banner image  
+- badges (GitHub, license, status)  
+- screenshots or GIF previews  
+Just let me know!
 
-📄 Additional Documentation
-File	Description
-docs/technical-documentation.md	Full breakdown of architecture, APIs, logic, and performance work
-docs/ai-usage-report.md	Required AI usage log with prompts, responses, edits, and reflections
-🌐 Optional: Deployment
 
-You can deploy this project using:
-
-GitHub Pages
-
-Netlify
-
-Vercel
-
-If deployed, include your link here:
-
-🔗 Live Demo: (Add link if available)
-
-📜 Academic Integrity Statement
-
-All work in this project is my own.
-AI tools assisted in planning, debugging, and documentation, but all final code and decisions were written, edited, or validated by me.
-AI usage is fully documented as required.
-
-✅ Final Notes
-
-This portfolio now includes advanced interactivity, external data, and persistent state, fulfilling all Assignment 3 requirements. It also sets a strong foundation for the final project and future upgrades.
-
-If you need help generating badges, screenshots, or a prettier README layout, feel free to ask!
