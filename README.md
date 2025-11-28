@@ -22,6 +22,7 @@ The entire application runs on **HTML, CSS, and vanilla JavaScript** with no bui
 
 # 📂 Project Structure
 
+<pre>
 assignment-3/
 ├── README.md
 ├── index.html
@@ -35,6 +36,8 @@ assignment-3/
 │   ├── ai-usage-report.md
 │   └── technical-documentation.md
 └── .gitignore
+</pre>
+
 
 
 
